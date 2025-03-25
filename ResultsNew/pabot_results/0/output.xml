@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T18:42:44.048417" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Datadriven" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot">
+<kw name="open my browser" owner="loginFile" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:44.170626" level="INFO">Opening browser 'headlesschrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-24T18:42:44.170457" elapsed="2.916434"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.088562" elapsed="0.018904"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:44.170019" elapsed="2.938512"/>
+</kw>
+<test id="s1-s1-t1" name="Test1" line="10">
+<kw name="invalid input tests">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.113568" elapsed="0.075873"/>
+</kw>
+<arg>admin@yourstore.com</arg>
+<arg>admin</arg>
+<status status="PASS" start="2025-03-24T18:42:47.113065" elapsed="0.076488"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:47.111124" elapsed="0.078546"/>
+</test>
+<test id="s1-s1-t2" name="Test2" line="11">
+<kw name="invalid input tests">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.190327" elapsed="0.000110"/>
+</kw>
+<arg>adminn@yourstore.com</arg>
+<arg>admin</arg>
+<status status="PASS" start="2025-03-24T18:42:47.190099" elapsed="0.000389"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:47.189868" elapsed="0.000692"/>
+</test>
+<kw name="close my browser" owner="loginFile" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.191017" elapsed="0.000099"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:47.190896" elapsed="0.000265"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:44.061294" elapsed="3.129895"/>
+</suite>
+<status status="PASS" start="2025-03-24T18:42:44.052721" elapsed="3.138903"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="2" fail="0" skip="0">Suites</stat>
+<stat name="Datadriven" id="s1-s1" pass="2" fail="0" skip="0">Suites.Datadriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

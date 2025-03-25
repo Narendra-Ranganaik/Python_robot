@@ -1,0 +1,50 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Datadriven                                                             
+==============================================================================
+Test1                                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:10
+    T:  Test1    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:10
+      invalid input tests    admin@yourstore.com    admin
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:21
+      verify error message    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/Resources/loginFile.robot:37
+      Page Should Contain    Login was unsuccessful.
+______________________________________________________________________________
+| FAIL |
+Page should have contained text 'Login was unsuccessful.' but did not.
+------------------------------------------------------------------------------
+Test2                                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:11
+    T:  Test2    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:11
+      invalid input tests    adminn@yourstore.com    admin
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot:17
+      enter user name    ${username}
+      |  ${username} = adminn@yourstore.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/Resources/loginFile.robot:24
+      Input Text    id:Email    ${username}
+      |  ${username} = adminn@yourstore.com (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id:Email' not found.
+------------------------------------------------------------------------------
+Suites.Datadriven                                                     | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  /Users/devayanaimohanty/Desktop/Python_Project/Python_robot/pabot_results/0/output.xml

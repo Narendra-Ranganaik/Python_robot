@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T18:42:47.707257" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Second" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/second.robot">
+<test id="s1-s1-t1" name="demo" line="12">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.813837" elapsed="0.000205"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:47.814288" level="INFO">Opening browser 'headlessChrome' to base url 'https://demoqa.com/elements'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-24T18:42:47.814145" elapsed="2.045763"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-24T18:42:49.862398" elapsed="0.048609"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:49.925400" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-03-24T18:42:49.913473" elapsed="0.012041"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:49.929129" level="INFO">Clicking element 'xpath:(//li[@id='item-0'])[1]'.</msg>
+<arg>xpath:(//li[@id='item-0'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:49.925727" elapsed="0.448809"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:50.382598" level="INFO">Typing text 'Navin' into text field 'id:userName'.</msg>
+<arg>id:userName</arg>
+<arg>Navin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:50.379860" elapsed="0.413677"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:50.794075" level="INFO">Typing text 'navin@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>id:userEmail</arg>
+<arg>navin@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:50.793769" elapsed="0.660388"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:51.462492" level="INFO">Clicking element 'xpath:(//li[@id='item-1'])[1]'.</msg>
+<arg>xpath:(//li[@id='item-1'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:51.458784" elapsed="0.087944"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T18:42:53.548295" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T18:42:51.546902" elapsed="2.001673"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T18:42:55.550448" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T18:42:53.548892" elapsed="2.002307"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:55.554926" level="INFO">Clicking element 'xpath:(//li[@id='item-4'])[1]'.</msg>
+<arg>xpath:(//li[@id='item-4'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:55.552457" elapsed="0.083798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T18:42:57.640994" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T18:42:55.637379" elapsed="2.013445"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-24T18:42:57.654097" level="INFO">Double clicking element 'xpath://button[@id='doubleClickBtn']'.</msg>
+<arg>xpath://button[@id='doubleClickBtn']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:42:57.653085" elapsed="0.293346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T18:43:01.950887" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T18:42:57.946796" elapsed="4.006579"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://button[@id='rightClickBtn']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T18:43:01.955578" elapsed="0.293289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T18:43:06.251845" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T18:43:02.249293" elapsed="4.002875"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-24T18:43:06.252652" elapsed="0.097290"/>
+</kw>
+<status status="PASS" start="2025-03-24T18:42:47.813201" elapsed="18.536950"/>
+</test>
+<status status="PASS" start="2025-03-24T18:42:47.719249" elapsed="18.631511"/>
+</suite>
+<status status="PASS" start="2025-03-24T18:42:47.710973" elapsed="18.640267"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Second" id="s1-s1" pass="1" fail="0" skip="0">Suites.Second</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

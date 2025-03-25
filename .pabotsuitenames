@@ -1,0 +1,10 @@
+datasources:f08723b57529364391eda3f8bc22683ce77fb4fe
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:cfc3c4d00f85c5e8bea2e3bfb8e2df2e5f16bbb6
+--suite Suites.Datadriven
+--suite Suites.First
+--suite Suites.Forloop
+--suite Suites.Second
+--suite Suites.getAllLinks
+--suite Suites.loginTest

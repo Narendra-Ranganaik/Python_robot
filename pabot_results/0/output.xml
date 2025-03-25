@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T15:22:34.962421" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Datadriven" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot">
+<kw name="open my browser" owner="loginFile" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:35.091048" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-24T15:22:35.090799" elapsed="5.073901"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-24T15:22:40.165927" elapsed="0.373902"/>
+</kw>
+<status status="PASS" start="2025-03-24T15:22:35.090303" elapsed="5.449736"/>
+</kw>
+<test id="s1-s1-t1" name="Test1" line="10">
+<kw name="invalid input tests">
+<kw name="enter user name" owner="loginFile">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:40.542888" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T15:22:40.541643" elapsed="0.284158"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-03-24T15:22:40.541437" elapsed="0.284498"/>
+</kw>
+<kw name="enter password" owner="loginFile">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:40.830504" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T15:22:40.829451" elapsed="0.073613"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-03-24T15:22:40.826109" elapsed="0.077264"/>
+</kw>
+<kw name="click on login button" owner="loginFile">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:40.906333" level="INFO">Clicking element 'xpath://button[text()='Log in']'.</msg>
+<arg>xpath://button[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-24T15:22:40.905607" elapsed="0.196803"/>
+</kw>
+<status status="PASS" start="2025-03-24T15:22:40.904529" elapsed="0.198053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-24T15:22:56.107870" level="INFO">Slept 15 seconds.</msg>
+<arg>15</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-24T15:22:41.102821" elapsed="15.011306"/>
+</kw>
+<kw name="verify error message" owner="loginFile">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:57.020055" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-24T15:22:57.020293" level="FAIL">Page should have contained text 'Login was unsuccessful.' but did not.</msg>
+<arg>Login was unsuccessful.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-03-24T15:22:56.117610" elapsed="0.917404">Page should have contained text 'Login was unsuccessful.' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-03-24T15:22:56.116759" elapsed="0.918433">Page should have contained text 'Login was unsuccessful.' but did not.</status>
+</kw>
+<arg>admin@yourstore.com</arg>
+<arg>admin</arg>
+<status status="FAIL" start="2025-03-24T15:22:40.541120" elapsed="16.494134">Page should have contained text 'Login was unsuccessful.' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-03-24T15:22:40.540345" elapsed="16.495063">Page should have contained text 'Login was unsuccessful.' but did not.</status>
+</test>
+<test id="s1-s1-t2" name="Test2" line="11">
+<kw name="invalid input tests">
+<kw name="enter user name" owner="loginFile">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-24T15:22:57.036396" level="INFO">Typing text 'adminn@yourstore.com' into text field 'id:Email'.</msg>
+<msg time="2025-03-24T15:22:57.202342" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-24T15:22:57.202454" level="FAIL">Element with locator 'id:Email' not found.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-24T15:22:57.036244" elapsed="0.175703">Element with locator 'id:Email' not found.</status>
+</kw>
+<arg>${username}</arg>
+<status status="FAIL" start="2025-03-24T15:22:57.036064" elapsed="0.176085">Element with locator 'id:Email' not found.</status>
+</kw>
+<kw name="enter password" owner="loginFile">
+<arg>${pass}</arg>
+<status status="NOT RUN" start="2025-03-24T15:22:57.212281" elapsed="0.000045"/>
+</kw>
+<kw name="click on login button" owner="loginFile">
+<status status="NOT RUN" start="2025-03-24T15:22:57.212409" elapsed="0.000029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>15</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-24T15:22:57.212506" elapsed="0.000026"/>
+</kw>
+<kw name="verify error message" owner="loginFile">
+<status status="NOT RUN" start="2025-03-24T15:22:57.212615" elapsed="0.000027"/>
+</kw>
+<arg>adminn@yourstore.com</arg>
+<arg>admin</arg>
+<status status="FAIL" start="2025-03-24T15:22:57.035848" elapsed="0.176851">Element with locator 'id:Email' not found.</status>
+</kw>
+<status status="FAIL" start="2025-03-24T15:22:57.035611" elapsed="0.177200">Element with locator 'id:Email' not found.</status>
+</test>
+<kw name="close my browser" owner="loginFile" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-24T15:22:57.213314" elapsed="0.138265"/>
+</kw>
+<status status="PASS" start="2025-03-24T15:22:57.213161" elapsed="0.138517"/>
+</kw>
+<status status="FAIL" start="2025-03-24T15:22:34.977297" elapsed="22.374413"/>
+</suite>
+<status status="FAIL" start="2025-03-24T15:22:34.966614" elapsed="22.385562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="2" skip="0">Suites</stat>
+<stat name="Datadriven" id="s1-s1" pass="0" fail="2" skip="0">Suites.Datadriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
