@@ -9,3 +9,5 @@ Open Google
     Open Browser    ${URL}    ${Browser}
     Title Should Be    Google
     Close Browser
+
+#Just a comment to verify git integration and Pipeline trigger
