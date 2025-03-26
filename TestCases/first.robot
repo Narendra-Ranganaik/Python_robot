@@ -12,4 +12,4 @@ Open Google
 
 #Just a comment to verify git integration and Pipeline trigger
 #Just a second comment to verify git integration and Pipeline trigger
-#Third comment to verify git integration and Pipeline trigger
+#Third comment
