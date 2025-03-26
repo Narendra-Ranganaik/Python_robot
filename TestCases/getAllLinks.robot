@@ -6,6 +6,7 @@ getLinksall
     open browser    https://demoqa.com/links    headlessChrome
     maximize browser window
     sleep    3
+    #store number of links
     ${allLinks}=    get element count    xpath://a
     log to console    ${allLinks}
 
