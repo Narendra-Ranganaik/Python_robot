@@ -11,5 +11,4 @@ Open Google
     Close Browser
 
 #Just a comment to verify git integration and Pipeline trigger
-#Just a second comment to verify git integration and Pipeline
-
+#second comment to verify git integration and pipe
