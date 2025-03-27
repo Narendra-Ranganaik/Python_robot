@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T18:42:53.460756" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-26T23:21:05.473295" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="loginTest" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/loginTest.robot">
 <test id="s1-s1-t1" name="LoginTest" line="12">
 <kw name="Open my browser" owner="demoLogin">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.569823" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<msg time="2025-03-26T23:21:05.590261" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.569617" elapsed="1.513103"/>
+<status status="PASS" start="2025-03-26T23:21:05.589956" elapsed="1.994605"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.083176" elapsed="0.016871"/>
+<status status="PASS" start="2025-03-26T23:21:07.587287" elapsed="0.016593"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-03-24T18:42:53.569100" elapsed="1.531075"/>
+<status status="PASS" start="2025-03-26T23:21:05.589315" elapsed="2.015735"/>
 </kw>
 <kw name="Enter username" owner="demoLogin">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.101105" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='userName']'.</msg>
+<msg time="2025-03-26T23:21:07.606902" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='userName']'.</msg>
 <arg>${input_username}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.100760" elapsed="0.083455"/>
+<status status="PASS" start="2025-03-26T23:21:07.606171" elapsed="0.116321"/>
 </kw>
 <arg>${username}</arg>
-<status status="PASS" start="2025-03-24T18:42:55.100411" elapsed="0.083921"/>
+<status status="PASS" start="2025-03-26T23:21:07.605574" elapsed="0.117030"/>
 </kw>
 <kw name="Enter password" owner="demoLogin">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.184929" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='password']'.</msg>
+<msg time="2025-03-26T23:21:07.723247" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='password']'.</msg>
 <arg>${input_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.184759" elapsed="0.039358"/>
+<status status="PASS" start="2025-03-26T23:21:07.723069" elapsed="0.043513"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2025-03-24T18:42:55.184477" elapsed="0.039747"/>
+<status status="PASS" start="2025-03-26T23:21:07.722754" elapsed="0.043953"/>
 </kw>
 <kw name="Click signIn" owner="demoLogin">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.224735" level="INFO">Clicking element 'xpath://input[@name='submit']'.</msg>
+<msg time="2025-03-26T23:21:07.767258" level="INFO">Clicking element 'xpath://input[@name='submit']'.</msg>
 <arg>${btn_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.224587" elapsed="0.519583"/>
+<status status="PASS" start="2025-03-26T23:21:07.767094" elapsed="0.038974"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:55.224358" elapsed="0.520798"/>
+<status status="PASS" start="2025-03-26T23:21:07.766850" elapsed="0.039324"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:58.746377" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-26T23:21:10.807004" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.745462" elapsed="3.001095"/>
+<status status="PASS" start="2025-03-26T23:21:07.806299" elapsed="3.001320"/>
 </kw>
 <kw name="verify login success" owner="demoLogin">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:58.756470" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<msg time="2025-03-26T23:21:10.821629" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
 <arg>Login: Mercury Tours</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-03-24T18:42:58.747358" elapsed="0.009212"/>
+<status status="PASS" start="2025-03-26T23:21:10.809983" elapsed="0.011834"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:58.746910" elapsed="0.009756"/>
+<status status="PASS" start="2025-03-26T23:21:10.808608" elapsed="0.013413"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:43:00.758848" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-26T23:21:12.825153" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:58.756781" elapsed="2.002616"/>
+<status status="PASS" start="2025-03-26T23:21:10.822272" elapsed="2.003599"/>
 </kw>
 <kw name="close my browser" owner="demoLogin">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-24T18:43:00.760602" elapsed="0.083399"/>
+<status status="PASS" start="2025-03-26T23:21:12.828750" elapsed="0.096379"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:43:00.760048" elapsed="0.084075"/>
+<status status="PASS" start="2025-03-26T23:21:12.827311" elapsed="0.097956"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:53.568746" elapsed="7.275542"/>
+<status status="PASS" start="2025-03-26T23:21:05.588896" elapsed="7.336534"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:53.474323" elapsed="7.370390"/>
+<status status="PASS" start="2025-03-26T23:21:05.488459" elapsed="7.437539"/>
 </suite>
-<status status="PASS" start="2025-03-24T18:42:53.465915" elapsed="7.379288"/>
+<status status="PASS" start="2025-03-26T23:21:05.479202" elapsed="7.447374"/>
 </suite>
 <statistics>
 <total>

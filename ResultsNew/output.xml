@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T18:43:06.618862" rpa="false" schemaversion="5">
+<robot generator="Rebot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-26T23:21:16.219009" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Datadriven" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot">
 <kw name="open my browser" owner="loginFile" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:44.170626" level="INFO">Opening browser 'headlesschrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<msg time="2025-03-26T23:20:53.843598" level="INFO">Opening browser 'headlesschrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:44.170457" elapsed="2.916434"/>
+<status status="PASS" start="2025-03-26T23:20:53.843353" elapsed="4.045011"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.088562" elapsed="0.018904"/>
+<status status="PASS" start="2025-03-26T23:20:57.892987" elapsed="0.019885"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:44.170019" elapsed="2.938512"/>
+<status status="PASS" start="2025-03-26T23:20:53.842842" elapsed="4.070592"/>
 </kw>
 <test id="s1-s1-t1" name="Test1" line="10">
 <kw name="invalid input tests">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.113568" elapsed="0.075873"/>
+<status status="PASS" start="2025-03-26T23:20:57.925576" elapsed="0.089565"/>
 </kw>
 <arg>admin@yourstore.com</arg>
 <arg>admin</arg>
-<status status="PASS" start="2025-03-24T18:42:47.113065" elapsed="0.076488"/>
+<status status="PASS" start="2025-03-26T23:20:57.921785" elapsed="0.093568"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:47.111124" elapsed="0.078546"/>
+<status status="PASS" start="2025-03-26T23:20:57.917891" elapsed="0.097724"/>
 </test>
 <test id="s1-s1-t2" name="Test2" line="11">
 <kw name="invalid input tests">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.190327" elapsed="0.000110"/>
+<status status="PASS" start="2025-03-26T23:20:58.016614" elapsed="0.000120"/>
 </kw>
 <arg>adminn@yourstore.com</arg>
 <arg>admin</arg>
-<status status="PASS" start="2025-03-24T18:42:47.190099" elapsed="0.000389"/>
+<status status="PASS" start="2025-03-26T23:20:58.016351" elapsed="0.000439"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:47.189868" elapsed="0.000692"/>
+<status status="PASS" start="2025-03-26T23:20:58.016058" elapsed="0.000807"/>
 </test>
 <kw name="close my browser" owner="loginFile" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.191017" elapsed="0.000099"/>
+<status status="PASS" start="2025-03-26T23:20:58.017352" elapsed="0.000095"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:47.190896" elapsed="0.000265"/>
+<status status="PASS" start="2025-03-26T23:20:58.017224" elapsed="0.000270"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:44.061000" elapsed="3.018000"/>
+<status status="PASS" start="2025-03-26T23:20:53.729000" elapsed="4.169000"/>
 </suite>
 <suite id="s1-s2" name="First" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/first.robot">
 <test id="s1-s2-t1" name="Open Google" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:44.168691" level="INFO">Opening browser 'headlessChrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-03-26T23:20:53.840679" level="INFO">Opening browser 'headlessChrome' to base url 'https://www.google.com'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:44.168505" elapsed="3.159545"/>
+<status status="PASS" start="2025-03-26T23:20:53.840377" elapsed="4.258820"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:47.333507" level="INFO">Page title is 'Google'.</msg>
+<msg time="2025-03-26T23:20:58.103689" level="INFO">Page title is 'Google'.</msg>
 <arg>Google</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.328821" elapsed="0.004763"/>
+<status status="PASS" start="2025-03-26T23:20:58.100271" elapsed="0.003498"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.333713" elapsed="0.072579"/>
+<status status="PASS" start="2025-03-26T23:20:58.103901" elapsed="0.075878"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:44.167893" elapsed="3.238590"/>
+<status status="PASS" start="2025-03-26T23:20:53.839543" elapsed="4.340422"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:44.061298" elapsed="3.345574"/>
+<status status="PASS" start="2025-03-26T23:20:53.729208" elapsed="4.451512"/>
 </suite>
 <suite id="s1-s3" name="Forloop" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/forloop.robot">
 <test id="s1-s3-t1" name="forLoop1" line="3">
@@ -79,89 +79,89 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.584127" elapsed="0.000128"/>
+<status status="PASS" start="2025-03-26T23:20:58.450220" elapsed="0.000142"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2025-03-24T18:42:47.583845" elapsed="0.000452"/>
+<status status="PASS" start="2025-03-26T23:20:58.449925" elapsed="0.000483"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.584405" elapsed="0.000099"/>
+<status status="PASS" start="2025-03-26T23:20:58.450524" elapsed="0.000106"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2025-03-24T18:42:47.584352" elapsed="0.000182"/>
+<status status="PASS" start="2025-03-26T23:20:58.450467" elapsed="0.000193"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.584633" elapsed="0.000092"/>
+<status status="PASS" start="2025-03-26T23:20:58.450768" elapsed="0.000101"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2025-03-24T18:42:47.584584" elapsed="0.000168"/>
+<status status="PASS" start="2025-03-26T23:20:58.450712" elapsed="0.000185"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.584857" elapsed="0.000091"/>
+<status status="PASS" start="2025-03-26T23:20:58.451006" elapsed="0.000094"/>
 </kw>
 <var name="${i}">4</var>
-<status status="PASS" start="2025-03-24T18:42:47.584805" elapsed="0.000170"/>
+<status status="PASS" start="2025-03-26T23:20:58.450949" elapsed="0.000179"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.585076" elapsed="0.000092"/>
+<status status="PASS" start="2025-03-26T23:20:58.451232" elapsed="0.000103"/>
 </kw>
 <var name="${i}">5</var>
-<status status="PASS" start="2025-03-24T18:42:47.585026" elapsed="0.000167"/>
+<status status="PASS" start="2025-03-26T23:20:58.451178" elapsed="0.000184"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.585286" elapsed="0.000090"/>
+<status status="PASS" start="2025-03-26T23:20:58.451463" elapsed="0.000098"/>
 </kw>
 <var name="${i}">6</var>
-<status status="PASS" start="2025-03-24T18:42:47.585240" elapsed="0.000163"/>
+<status status="PASS" start="2025-03-26T23:20:58.451411" elapsed="0.000177"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.585496" elapsed="0.000091"/>
+<status status="PASS" start="2025-03-26T23:20:58.451688" elapsed="0.000094"/>
 </kw>
 <var name="${i}">7</var>
-<status status="PASS" start="2025-03-24T18:42:47.585451" elapsed="0.000163"/>
+<status status="PASS" start="2025-03-26T23:20:58.451636" elapsed="0.000173"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.585706" elapsed="0.000089"/>
+<status status="PASS" start="2025-03-26T23:20:58.451907" elapsed="0.000087"/>
 </kw>
 <var name="${i}">8</var>
-<status status="PASS" start="2025-03-24T18:42:47.585659" elapsed="0.000161"/>
+<status status="PASS" start="2025-03-26T23:20:58.451857" elapsed="0.000163"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.585915" elapsed="0.000083"/>
+<status status="PASS" start="2025-03-26T23:20:58.452118" elapsed="0.000086"/>
 </kw>
 <var name="${i}">9</var>
-<status status="PASS" start="2025-03-24T18:42:47.585867" elapsed="0.000156"/>
+<status status="PASS" start="2025-03-26T23:20:58.452066" elapsed="0.000163"/>
 </iter>
 <var>${i}</var>
 <value>1</value>
 <value>10</value>
-<status status="PASS" start="2025-03-24T18:42:47.583718" elapsed="0.002326"/>
+<status status="PASS" start="2025-03-26T23:20:58.449774" elapsed="0.002476"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.583525" elapsed="0.002596"/>
+<status status="PASS" start="2025-03-26T23:20:58.449574" elapsed="0.002751"/>
 </test>
 <test id="s1-s3-t2" name="forloop2" line="10">
 <for flavor="IN">
@@ -169,46 +169,46 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${j}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.586470" elapsed="0.000493"/>
+<status status="PASS" start="2025-03-26T23:20:58.452693" elapsed="0.000541"/>
 </kw>
 <var name="${j}">1</var>
-<status status="PASS" start="2025-03-24T18:42:47.586420" elapsed="0.000574"/>
+<status status="PASS" start="2025-03-26T23:20:58.452639" elapsed="0.000627"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${j}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.587099" elapsed="0.000088"/>
+<status status="PASS" start="2025-03-26T23:20:58.453375" elapsed="0.000099"/>
 </kw>
 <var name="${j}">2</var>
-<status status="PASS" start="2025-03-24T18:42:47.587048" elapsed="0.000166"/>
+<status status="PASS" start="2025-03-26T23:20:58.453319" elapsed="0.000184"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${j}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.587307" elapsed="0.000090"/>
+<status status="PASS" start="2025-03-26T23:20:58.453605" elapsed="0.000095"/>
 </kw>
 <var name="${j}">3</var>
-<status status="PASS" start="2025-03-24T18:42:47.587261" elapsed="0.000164"/>
+<status status="PASS" start="2025-03-26T23:20:58.453553" elapsed="0.000175"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${j}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.587522" elapsed="0.000090"/>
+<status status="PASS" start="2025-03-26T23:20:58.453825" elapsed="0.000094"/>
 </kw>
 <var name="${j}">4</var>
-<status status="PASS" start="2025-03-24T18:42:47.587473" elapsed="0.000165"/>
+<status status="PASS" start="2025-03-26T23:20:58.453776" elapsed="0.000170"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${j}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.587728" elapsed="0.000091"/>
+<status status="PASS" start="2025-03-26T23:20:58.454044" elapsed="0.000091"/>
 </kw>
 <var name="${j}">5</var>
-<status status="PASS" start="2025-03-24T18:42:47.587683" elapsed="0.000163"/>
+<status status="PASS" start="2025-03-26T23:20:58.453995" elapsed="0.000166"/>
 </iter>
 <var>${j}</var>
 <value>1</value>
@@ -216,607 +216,607 @@
 <value>3</value>
 <value>4</value>
 <value>5</value>
-<status status="PASS" start="2025-03-24T18:42:47.586353" elapsed="0.001516"/>
+<status status="PASS" start="2025-03-26T23:20:58.452566" elapsed="0.001617"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.586230" elapsed="0.001711"/>
+<status status="PASS" start="2025-03-26T23:20:58.452436" elapsed="0.001824"/>
 </test>
 <test id="s1-s3-t3" name="forloop3List" line="17">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-03-24T18:42:47.588288" level="INFO">@{items} = [ 22 | 23 | 33 | 55 ]</msg>
+<msg time="2025-03-26T23:20:58.454624" level="INFO">@{items} = [ 22 | 23 | 33 | 55 ]</msg>
 <var>@{items}</var>
 <arg>22</arg>
 <arg>23</arg>
 <arg>33</arg>
 <arg>55</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.588186" elapsed="0.000121"/>
+<status status="PASS" start="2025-03-26T23:20:58.454518" elapsed="0.000125"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${k}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.588467" elapsed="0.000090"/>
+<status status="PASS" start="2025-03-26T23:20:58.454807" elapsed="0.000090"/>
 </kw>
 <var name="${k}">22</var>
-<status status="PASS" start="2025-03-24T18:42:47.588420" elapsed="0.000165"/>
+<status status="PASS" start="2025-03-26T23:20:58.454760" elapsed="0.000164"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${k}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.588685" elapsed="0.000089"/>
+<status status="PASS" start="2025-03-26T23:20:58.455022" elapsed="0.000098"/>
 </kw>
 <var name="${k}">23</var>
-<status status="PASS" start="2025-03-24T18:42:47.588636" elapsed="0.000166"/>
+<status status="PASS" start="2025-03-26T23:20:58.454972" elapsed="0.000175"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${k}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.588900" elapsed="0.000085"/>
+<status status="PASS" start="2025-03-26T23:20:58.455243" elapsed="0.000088"/>
 </kw>
 <var name="${k}">33</var>
-<status status="PASS" start="2025-03-24T18:42:47.588851" elapsed="0.000160"/>
+<status status="PASS" start="2025-03-26T23:20:58.455193" elapsed="0.000165"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${k}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.589106" elapsed="0.000084"/>
+<status status="PASS" start="2025-03-26T23:20:58.455456" elapsed="0.000093"/>
 </kw>
 <var name="${k}">55</var>
-<status status="PASS" start="2025-03-24T18:42:47.589059" elapsed="0.000157"/>
+<status status="PASS" start="2025-03-26T23:20:58.455406" elapsed="0.000170"/>
 </iter>
 <var>${k}</var>
 <value>@{items}</value>
-<status status="PASS" start="2025-03-24T18:42:47.588348" elapsed="0.000891"/>
+<status status="PASS" start="2025-03-26T23:20:58.454686" elapsed="0.000913"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.588041" elapsed="0.001262"/>
+<status status="PASS" start="2025-03-26T23:20:58.454364" elapsed="0.001299"/>
 </test>
 <test id="s1-s3-t4" name="forloopstrings" line="23">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-03-24T18:42:47.589642" level="INFO">@{names} = [ Navin | Neha | Gani | Ishika ]</msg>
+<msg time="2025-03-26T23:20:58.456017" level="INFO">@{names} = [ Navin | Neha | Gani | Ishika ]</msg>
 <var>@{names}</var>
 <arg>Navin</arg>
 <arg>Neha</arg>
 <arg>Gani</arg>
 <arg>Ishika</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.589542" elapsed="0.000117"/>
+<status status="PASS" start="2025-03-26T23:20:58.455913" elapsed="0.000123"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.589824" elapsed="0.000089"/>
+<status status="PASS" start="2025-03-26T23:20:58.456202" elapsed="0.000092"/>
 </kw>
 <var name="${n}">Navin</var>
-<status status="PASS" start="2025-03-24T18:42:47.589775" elapsed="0.000165"/>
+<status status="PASS" start="2025-03-26T23:20:58.456154" elapsed="0.000166"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.590035" elapsed="0.000091"/>
+<status status="PASS" start="2025-03-26T23:20:58.456417" elapsed="0.000090"/>
 </kw>
 <var name="${n}">Neha</var>
-<status status="PASS" start="2025-03-24T18:42:47.589988" elapsed="0.000164"/>
+<status status="PASS" start="2025-03-26T23:20:58.456367" elapsed="0.000166"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.590361" elapsed="0.000089"/>
+<status status="PASS" start="2025-03-26T23:20:58.456769" elapsed="0.000090"/>
 </kw>
 <var name="${n}">Gani</var>
-<status status="PASS" start="2025-03-24T18:42:47.590313" elapsed="0.000163"/>
+<status status="PASS" start="2025-03-26T23:20:58.456718" elapsed="0.000168"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.590571" elapsed="0.000087"/>
+<status status="PASS" start="2025-03-26T23:20:58.456984" elapsed="0.000091"/>
 </kw>
 <var name="${n}">Ishika</var>
-<status status="PASS" start="2025-03-24T18:42:47.590524" elapsed="0.000161"/>
+<status status="PASS" start="2025-03-26T23:20:58.456933" elapsed="0.000168"/>
 </iter>
 <var>${n}</var>
 <value>@{names}</value>
-<status status="PASS" start="2025-03-24T18:42:47.589700" elapsed="0.001009"/>
+<status status="PASS" start="2025-03-26T23:20:58.456078" elapsed="0.001045"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.589399" elapsed="0.001377"/>
+<status status="PASS" start="2025-03-26T23:20:58.455762" elapsed="0.001424"/>
 </test>
 <test id="s1-s3-t5" name="forLoopWithExit" line="30">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-03-24T18:42:47.591141" level="INFO">@{items} = [ 22 | 23 | 33 | 55 ]</msg>
+<msg time="2025-03-26T23:20:58.457534" level="INFO">@{items} = [ 22 | 23 | 33 | 55 ]</msg>
 <var>@{items}</var>
 <arg>22</arg>
 <arg>23</arg>
 <arg>33</arg>
 <arg>55</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.591040" elapsed="0.000120"/>
+<status status="PASS" start="2025-03-26T23:20:58.457429" elapsed="0.000124"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.591331" elapsed="0.000095"/>
+<status status="PASS" start="2025-03-26T23:20:58.457728" elapsed="0.000094"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${n}==33</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.591484" elapsed="0.000225"/>
+<status status="PASS" start="2025-03-26T23:20:58.457878" elapsed="0.000130"/>
 </kw>
 <var name="${n}">22</var>
-<status status="PASS" start="2025-03-24T18:42:47.591283" elapsed="0.000472"/>
+<status status="PASS" start="2025-03-26T23:20:58.457675" elapsed="0.000361"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.591903" elapsed="0.000120"/>
+<status status="PASS" start="2025-03-26T23:20:58.458136" elapsed="0.000091"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${n}==33</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.592110" elapsed="0.000170"/>
+<status status="PASS" start="2025-03-26T23:20:58.458282" elapsed="0.000119"/>
 </kw>
 <var name="${n}">23</var>
-<status status="PASS" start="2025-03-24T18:42:47.591832" elapsed="0.000485"/>
+<status status="PASS" start="2025-03-26T23:20:58.458087" elapsed="0.000340"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.592452" elapsed="0.000120"/>
+<status status="PASS" start="2025-03-26T23:20:58.458527" elapsed="0.000089"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-03-24T18:42:47.592937" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2025-03-26T23:20:58.458786" level="INFO">Exiting for loop altogether.</msg>
 <arg>${n}==33</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.592638" elapsed="0.000531"/>
+<status status="PASS" start="2025-03-26T23:20:58.458672" elapsed="0.000235"/>
 </kw>
 <var name="${n}">33</var>
-<status status="PASS" start="2025-03-24T18:42:47.592388" elapsed="0.000839"/>
+<status status="PASS" start="2025-03-26T23:20:58.458477" elapsed="0.000461"/>
 </iter>
 <var>${n}</var>
 <value>@{items}</value>
-<status status="PASS" start="2025-03-24T18:42:47.591204" elapsed="0.002057"/>
+<status status="PASS" start="2025-03-26T23:20:58.457596" elapsed="0.001389"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.590880" elapsed="0.002476"/>
+<status status="PASS" start="2025-03-26T23:20:58.457282" elapsed="0.001801"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:47.582940" elapsed="0.010680"/>
+<status status="PASS" start="2025-03-26T23:20:58.448963" elapsed="0.010365"/>
 </suite>
 <suite id="s1-s4" name="Second" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/second.robot">
 <test id="s1-s4-t1" name="demo" line="12">
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.813837" elapsed="0.000205"/>
+<status status="PASS" start="2025-03-26T23:20:58.576176" elapsed="0.000205"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:47.814288" level="INFO">Opening browser 'headlessChrome' to base url 'https://demoqa.com/elements'.</msg>
+<msg time="2025-03-26T23:20:58.576629" level="INFO">Opening browser 'headlessChrome' to base url 'https://demoqa.com/elements'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.814145" elapsed="2.045763"/>
+<status status="PASS" start="2025-03-26T23:20:58.576484" elapsed="0.893173"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-24T18:42:49.862398" elapsed="0.048609"/>
+<status status="PASS" start="2025-03-26T23:20:59.470070" elapsed="1.182341"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:49.925400" level="INFO">Page title is 'DEMOQA'.</msg>
+<msg time="2025-03-26T23:21:00.657705" level="INFO">Page title is 'DEMOQA'.</msg>
 <arg>DEMOQA</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-03-24T18:42:49.913473" elapsed="0.012041"/>
+<status status="PASS" start="2025-03-26T23:21:00.653534" elapsed="0.004388"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:49.929129" level="INFO">Clicking element 'xpath:(//li[@id='item-0'])[1]'.</msg>
+<msg time="2025-03-26T23:21:00.659098" level="INFO">Clicking element 'xpath:(//li[@id='item-0'])[1]'.</msg>
 <arg>xpath:(//li[@id='item-0'])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:49.925727" elapsed="0.448809"/>
+<status status="PASS" start="2025-03-26T23:21:00.658104" elapsed="0.097282"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:50.382598" level="INFO">Typing text 'Navin' into text field 'id:userName'.</msg>
+<msg time="2025-03-26T23:21:00.755802" level="INFO">Typing text 'Navin' into text field 'id:userName'.</msg>
 <arg>id:userName</arg>
 <arg>Navin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:50.379860" elapsed="0.413677"/>
+<status status="PASS" start="2025-03-26T23:21:00.755574" elapsed="0.265473"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:50.794075" level="INFO">Typing text 'navin@gmail.com' into text field 'id:userEmail'.</msg>
+<msg time="2025-03-26T23:21:01.021737" level="INFO">Typing text 'navin@gmail.com' into text field 'id:userEmail'.</msg>
 <arg>id:userEmail</arg>
 <arg>navin@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:50.793769" elapsed="0.660388"/>
+<status status="PASS" start="2025-03-26T23:21:01.021423" elapsed="0.061385"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:51.462492" level="INFO">Clicking element 'xpath:(//li[@id='item-1'])[1]'.</msg>
+<msg time="2025-03-26T23:21:01.084025" level="INFO">Clicking element 'xpath:(//li[@id='item-1'])[1]'.</msg>
 <arg>xpath:(//li[@id='item-1'])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:51.458784" elapsed="0.087944"/>
+<status status="PASS" start="2025-03-26T23:21:01.083374" elapsed="0.043693"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:53.548295" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-26T23:21:03.129547" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:51.546902" elapsed="2.001673"/>
+<status status="PASS" start="2025-03-26T23:21:01.127237" elapsed="2.004334"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:55.550448" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-26T23:21:05.140913" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.548892" elapsed="2.002307"/>
+<status status="PASS" start="2025-03-26T23:21:03.136651" elapsed="2.012756"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.554926" level="INFO">Clicking element 'xpath:(//li[@id='item-4'])[1]'.</msg>
+<msg time="2025-03-26T23:21:05.151585" level="INFO">Clicking element 'xpath:(//li[@id='item-4'])[1]'.</msg>
 <arg>xpath:(//li[@id='item-4'])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.552457" elapsed="0.083798"/>
+<status status="PASS" start="2025-03-26T23:21:05.150559" elapsed="0.075891"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:57.640994" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-26T23:21:07.233467" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.637379" elapsed="2.013445"/>
+<status status="PASS" start="2025-03-26T23:21:05.229007" elapsed="2.005371"/>
 </kw>
 <kw name="Double Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:57.654097" level="INFO">Double clicking element 'xpath://button[@id='doubleClickBtn']'.</msg>
+<msg time="2025-03-26T23:21:07.236315" level="INFO">Double clicking element 'xpath://button[@id='doubleClickBtn']'.</msg>
 <arg>xpath://button[@id='doubleClickBtn']</arg>
 <doc>Double clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:57.653085" elapsed="0.293346"/>
+<status status="PASS" start="2025-03-26T23:21:07.235494" elapsed="0.286594"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:43:01.950887" level="INFO">Slept 4 seconds.</msg>
+<msg time="2025-03-26T23:21:11.524035" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:57.946796" elapsed="4.006579"/>
+<status status="PASS" start="2025-03-26T23:21:07.522412" elapsed="4.015798"/>
 </kw>
 <kw name="Open Context Menu" owner="SeleniumLibrary">
 <arg>xpath://button[@id='rightClickBtn']</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:43:01.955578" elapsed="0.293289"/>
+<status status="PASS" start="2025-03-26T23:21:11.540274" elapsed="0.297274"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:43:06.251845" level="INFO">Slept 4 seconds.</msg>
+<msg time="2025-03-26T23:21:15.839283" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:43:02.249293" elapsed="4.002875"/>
+<status status="PASS" start="2025-03-26T23:21:11.838030" elapsed="4.001756"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-24T18:43:06.252652" elapsed="0.097290"/>
+<status status="PASS" start="2025-03-26T23:21:15.840259" elapsed="0.093210"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:47.813201" elapsed="18.536950"/>
+<status status="PASS" start="2025-03-26T23:20:58.575547" elapsed="17.358149"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:47.719249" elapsed="18.631511"/>
+<status status="PASS" start="2025-03-26T23:20:58.481027" elapsed="17.453243"/>
 </suite>
 <suite id="s1-s5" name="getAllLinks" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/getAllLinks.robot">
 <test id="s1-s5-t1" name="getLinksall" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:47.989658" level="INFO">Opening browser 'headlessChrome' to base url 'https://demoqa.com/links'.</msg>
+<msg time="2025-03-26T23:20:58.846796" level="INFO">Opening browser 'headlessChrome' to base url 'https://demoqa.com/links'.</msg>
 <arg>https://demoqa.com/links</arg>
 <arg>headlessChrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.989471" elapsed="1.867833"/>
+<status status="PASS" start="2025-03-26T23:20:58.846398" elapsed="2.347026"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-24T18:42:49.861544" elapsed="0.048449"/>
+<status status="PASS" start="2025-03-26T23:21:01.196759" elapsed="0.023957"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:52.917158" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-26T23:21:04.264322" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:49.913203" elapsed="3.005124"/>
+<status status="PASS" start="2025-03-26T23:21:01.220986" elapsed="3.067508"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.931745" level="INFO">${allLinks} = 12</msg>
+<msg time="2025-03-26T23:21:04.467967" level="INFO">${allLinks} = 12</msg>
 <var>${allLinks}</var>
 <arg>xpath://a</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.919469" elapsed="0.012320"/>
+<status status="PASS" start="2025-03-26T23:21:04.303155" elapsed="0.165413"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${allLinks}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.932031" elapsed="0.002756"/>
+<status status="PASS" start="2025-03-26T23:21:04.468823" elapsed="0.006813"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-03-24T18:42:52.935138" level="INFO">${links} = []</msg>
+<msg time="2025-03-26T23:21:04.488032" level="INFO">${links} = []</msg>
 <var>${links}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.934984" elapsed="0.000178"/>
+<status status="PASS" start="2025-03-26T23:21:04.477008" elapsed="0.011520"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.954692" level="INFO">${individual} = </msg>
+<msg time="2025-03-26T23:21:04.535745" level="INFO">${individual} = </msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.935666" elapsed="0.019066"/>
+<status status="PASS" start="2025-03-26T23:21:04.507708" elapsed="0.028102"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.954878" elapsed="0.000223"/>
+<status status="PASS" start="2025-03-26T23:21:04.536092" elapsed="0.000277"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2025-03-24T18:42:52.935574" elapsed="0.019567"/>
+<status status="PASS" start="2025-03-26T23:21:04.504507" elapsed="0.031917"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.965337" level="INFO">${individual} = </msg>
+<msg time="2025-03-26T23:21:04.567400" level="INFO">${individual} = </msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.955329" elapsed="0.010044"/>
+<status status="PASS" start="2025-03-26T23:21:04.536652" elapsed="0.031004"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.965498" elapsed="0.000189"/>
+<status status="PASS" start="2025-03-26T23:21:04.568478" elapsed="0.001913"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2025-03-24T18:42:52.955232" elapsed="0.010489"/>
+<status status="PASS" start="2025-03-26T23:21:04.536548" elapsed="0.034147"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.975445" level="INFO">${individual} = Home</msg>
+<msg time="2025-03-26T23:21:04.596365" level="INFO">${individual} = Home</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.965861" elapsed="0.009621"/>
+<status status="PASS" start="2025-03-26T23:21:04.571184" elapsed="0.025241"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.975611" elapsed="0.000190"/>
+<status status="PASS" start="2025-03-26T23:21:04.596734" elapsed="0.001115"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2025-03-24T18:42:52.965795" elapsed="0.010041"/>
+<status status="PASS" start="2025-03-26T23:21:04.570985" elapsed="0.026989"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.984771" level="INFO">${individual} = HomeUAZn4</msg>
+<msg time="2025-03-26T23:21:04.615695" level="INFO">${individual} = HomeuhNdZ</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.975978" elapsed="0.008827"/>
+<status status="PASS" start="2025-03-26T23:21:04.598259" elapsed="0.017486"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.984927" elapsed="0.000179"/>
+<status status="PASS" start="2025-03-26T23:21:04.615918" elapsed="0.000311"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2025-03-24T18:42:52.975912" elapsed="0.009228"/>
+<status status="PASS" start="2025-03-26T23:21:04.598101" elapsed="0.018172"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:52.995789" level="INFO">${individual} = Created</msg>
+<msg time="2025-03-26T23:21:04.632659" level="INFO">${individual} = Created</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.985282" elapsed="0.010547"/>
+<status status="PASS" start="2025-03-26T23:21:04.616465" elapsed="0.016238"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.995972" elapsed="0.000213"/>
+<status status="PASS" start="2025-03-26T23:21:04.632868" elapsed="0.000455"/>
 </kw>
 <var name="${i}">4</var>
-<status status="PASS" start="2025-03-24T18:42:52.985216" elapsed="0.011011"/>
+<status status="PASS" start="2025-03-26T23:21:04.616374" elapsed="0.016996"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.006828" level="INFO">${individual} = No Content</msg>
+<msg time="2025-03-26T23:21:04.655822" level="INFO">${individual} = No Content</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:52.996398" elapsed="0.010470"/>
+<status status="PASS" start="2025-03-26T23:21:04.633700" elapsed="0.022175"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.006997" elapsed="0.000200"/>
+<status status="PASS" start="2025-03-26T23:21:04.656099" elapsed="0.000348"/>
 </kw>
 <var name="${i}">5</var>
-<status status="PASS" start="2025-03-24T18:42:52.996311" elapsed="0.010920"/>
+<status status="PASS" start="2025-03-26T23:21:04.633492" elapsed="0.023006"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.015954" level="INFO">${individual} = Moved</msg>
+<msg time="2025-03-26T23:21:04.673377" level="INFO">${individual} = Moved</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.007372" elapsed="0.008618"/>
+<status status="PASS" start="2025-03-26T23:21:04.656856" elapsed="0.016608"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.016112" elapsed="0.000184"/>
+<status status="PASS" start="2025-03-26T23:21:04.673744" elapsed="0.000315"/>
 </kw>
 <var name="${i}">6</var>
-<status status="PASS" start="2025-03-24T18:42:53.007306" elapsed="0.009024"/>
+<status status="PASS" start="2025-03-26T23:21:04.656658" elapsed="0.017443"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.024879" level="INFO">${individual} = Bad Request</msg>
+<msg time="2025-03-26T23:21:04.686807" level="INFO">${individual} = Bad Request</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.016470" elapsed="0.008443"/>
+<status status="PASS" start="2025-03-26T23:21:04.674267" elapsed="0.012587"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.025040" elapsed="0.000197"/>
+<status status="PASS" start="2025-03-26T23:21:04.687015" elapsed="0.000223"/>
 </kw>
 <var name="${i}">7</var>
-<status status="PASS" start="2025-03-24T18:42:53.016405" elapsed="0.008866"/>
+<status status="PASS" start="2025-03-26T23:21:04.674187" elapsed="0.013092"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.034331" level="INFO">${individual} = Unauthorized</msg>
+<msg time="2025-03-26T23:21:04.706469" level="INFO">${individual} = Unauthorized</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.025411" elapsed="0.008953"/>
+<status status="PASS" start="2025-03-26T23:21:04.687445" elapsed="0.019106"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.034487" elapsed="0.000181"/>
+<status status="PASS" start="2025-03-26T23:21:04.706819" elapsed="0.000509"/>
 </kw>
 <var name="${i}">8</var>
-<status status="PASS" start="2025-03-24T18:42:53.025346" elapsed="0.009358"/>
+<status status="PASS" start="2025-03-26T23:21:04.687366" elapsed="0.020041"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.044533" level="INFO">${individual} = Forbidden</msg>
+<msg time="2025-03-26T23:21:04.750572" level="INFO">${individual} = Forbidden</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.034845" elapsed="0.009728"/>
+<status status="PASS" start="2025-03-26T23:21:04.707653" elapsed="0.043086"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.044875" elapsed="0.000218"/>
+<status status="PASS" start="2025-03-26T23:21:04.752173" elapsed="0.001316"/>
 </kw>
 <var name="${i}">9</var>
-<status status="PASS" start="2025-03-24T18:42:53.034779" elapsed="0.010353"/>
+<status status="PASS" start="2025-03-26T23:21:04.707523" elapsed="0.046538"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.055060" level="INFO">${individual} = Not Found</msg>
+<msg time="2025-03-26T23:21:04.784444" level="INFO">${individual} = Not Found</msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.045294" elapsed="0.009811"/>
+<status status="PASS" start="2025-03-26T23:21:04.755338" elapsed="0.029151"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.055253" elapsed="0.000227"/>
+<status status="PASS" start="2025-03-26T23:21:04.784635" elapsed="0.000253"/>
 </kw>
 <var name="${i}">10</var>
-<status status="PASS" start="2025-03-24T18:42:53.045218" elapsed="0.010303"/>
+<status status="PASS" start="2025-03-26T23:21:04.754462" elapsed="0.030470"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.065001" level="INFO">${individual} = </msg>
+<msg time="2025-03-26T23:21:04.804747" level="INFO">${individual} = </msg>
 <var>${individual}</var>
 <arg>xpath:(//a)[${i}+1]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.055694" elapsed="0.009340"/>
+<status status="PASS" start="2025-03-26T23:21:04.785114" elapsed="0.019752"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${individual}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.065155" elapsed="0.000191"/>
+<status status="PASS" start="2025-03-26T23:21:04.805158" elapsed="0.000848"/>
 </kw>
 <var name="${i}">11</var>
-<status status="PASS" start="2025-03-24T18:42:53.055614" elapsed="0.009774"/>
+<status status="PASS" start="2025-03-26T23:21:04.785027" elapsed="0.021066"/>
 </iter>
 <var>${i}</var>
 <value>${allLinks}</value>
-<status status="PASS" start="2025-03-24T18:42:52.935286" elapsed="0.130139"/>
+<status status="PASS" start="2025-03-26T23:21:04.490465" elapsed="0.315738"/>
 </for>
-<status status="PASS" start="2025-03-24T18:42:47.988815" elapsed="5.076749"/>
+<status status="PASS" start="2025-03-26T23:20:58.845613" elapsed="5.960783"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:47.921862" elapsed="5.144020"/>
+<status status="PASS" start="2025-03-26T23:20:58.770756" elapsed="6.037436"/>
 </suite>
 <suite id="s1-s6" name="loginTest" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/loginTest.robot">
 <test id="s1-s6-t1" name="LoginTest" line="12">
 <kw name="Open my browser" owner="demoLogin">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:53.569823" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<msg time="2025-03-26T23:21:05.590261" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:53.569617" elapsed="1.513103"/>
+<status status="PASS" start="2025-03-26T23:21:05.589956" elapsed="1.994605"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.083176" elapsed="0.016871"/>
+<status status="PASS" start="2025-03-26T23:21:07.587287" elapsed="0.016593"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-03-24T18:42:53.569100" elapsed="1.531075"/>
+<status status="PASS" start="2025-03-26T23:21:05.589315" elapsed="2.015735"/>
 </kw>
 <kw name="Enter username" owner="demoLogin">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.101105" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='userName']'.</msg>
+<msg time="2025-03-26T23:21:07.606902" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='userName']'.</msg>
 <arg>${input_username}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.100760" elapsed="0.083455"/>
+<status status="PASS" start="2025-03-26T23:21:07.606171" elapsed="0.116321"/>
 </kw>
 <arg>${username}</arg>
-<status status="PASS" start="2025-03-24T18:42:55.100411" elapsed="0.083921"/>
+<status status="PASS" start="2025-03-26T23:21:07.605574" elapsed="0.117030"/>
 </kw>
 <kw name="Enter password" owner="demoLogin">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.184929" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='password']'.</msg>
+<msg time="2025-03-26T23:21:07.723247" level="INFO">Typing text 'tutorial' into text field 'xpath://input[@name='password']'.</msg>
 <arg>${input_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.184759" elapsed="0.039358"/>
+<status status="PASS" start="2025-03-26T23:21:07.723069" elapsed="0.043513"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2025-03-24T18:42:55.184477" elapsed="0.039747"/>
+<status status="PASS" start="2025-03-26T23:21:07.722754" elapsed="0.043953"/>
 </kw>
 <kw name="Click signIn" owner="demoLogin">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:55.224735" level="INFO">Clicking element 'xpath://input[@name='submit']'.</msg>
+<msg time="2025-03-26T23:21:07.767258" level="INFO">Clicking element 'xpath://input[@name='submit']'.</msg>
 <arg>${btn_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.224587" elapsed="0.519583"/>
+<status status="PASS" start="2025-03-26T23:21:07.767094" elapsed="0.038974"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:55.224358" elapsed="0.520798"/>
+<status status="PASS" start="2025-03-26T23:21:07.766850" elapsed="0.039324"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:42:58.746377" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-26T23:21:10.807004" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:55.745462" elapsed="3.001095"/>
+<status status="PASS" start="2025-03-26T23:21:07.806299" elapsed="3.001320"/>
 </kw>
 <kw name="verify login success" owner="demoLogin">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:58.756470" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<msg time="2025-03-26T23:21:10.821629" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
 <arg>Login: Mercury Tours</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-03-24T18:42:58.747358" elapsed="0.009212"/>
+<status status="PASS" start="2025-03-26T23:21:10.809983" elapsed="0.011834"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:58.746910" elapsed="0.009756"/>
+<status status="PASS" start="2025-03-26T23:21:10.808608" elapsed="0.013413"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-24T18:43:00.758848" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-26T23:21:12.825153" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-24T18:42:58.756781" elapsed="2.002616"/>
+<status status="PASS" start="2025-03-26T23:21:10.822272" elapsed="2.003599"/>
 </kw>
 <kw name="close my browser" owner="demoLogin">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-24T18:43:00.760602" elapsed="0.083399"/>
+<status status="PASS" start="2025-03-26T23:21:12.828750" elapsed="0.096379"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:43:00.760048" elapsed="0.084075"/>
+<status status="PASS" start="2025-03-26T23:21:12.827311" elapsed="0.097956"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:53.568746" elapsed="7.275542"/>
+<status status="PASS" start="2025-03-26T23:21:05.588896" elapsed="7.336534"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:53.474323" elapsed="7.370390"/>
+<status status="PASS" start="2025-03-26T23:21:05.488459" elapsed="7.437539"/>
 </suite>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 6 executions.</doc>
-<status status="PASS" start="2025-03-24T18:42:44.052000" elapsed="22.299000"/>
+<status status="PASS" start="2025-03-26T23:20:53.719000" elapsed="22.215000"/>
 </suite>
 <statistics>
 <total>

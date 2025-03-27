@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-24T18:42:44.048417" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-26T23:20:53.710944" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="First" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/first.robot">
 <test id="s1-s1-t1" name="Open Google" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:44.168691" level="INFO">Opening browser 'headlessChrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-03-26T23:20:53.840679" level="INFO">Opening browser 'headlessChrome' to base url 'https://www.google.com'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-24T18:42:44.168505" elapsed="3.159545"/>
+<status status="PASS" start="2025-03-26T23:20:53.840377" elapsed="4.258820"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-03-24T18:42:47.333507" level="INFO">Page title is 'Google'.</msg>
+<msg time="2025-03-26T23:20:58.103689" level="INFO">Page title is 'Google'.</msg>
 <arg>Google</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.328821" elapsed="0.004763"/>
+<status status="PASS" start="2025-03-26T23:20:58.100271" elapsed="0.003498"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-24T18:42:47.333713" elapsed="0.072579"/>
+<status status="PASS" start="2025-03-26T23:20:58.103901" elapsed="0.075878"/>
 </kw>
-<status status="PASS" start="2025-03-24T18:42:44.167893" elapsed="3.238590"/>
+<status status="PASS" start="2025-03-26T23:20:53.839543" elapsed="4.340422"/>
 </test>
-<status status="PASS" start="2025-03-24T18:42:44.061298" elapsed="3.345574"/>
+<status status="PASS" start="2025-03-26T23:20:53.729208" elapsed="4.451512"/>
 </suite>
-<status status="PASS" start="2025-03-24T18:42:44.052769" elapsed="3.354503"/>
+<status status="PASS" start="2025-03-26T23:20:53.719374" elapsed="4.461739"/>
 </suite>
 <statistics>
 <total>
