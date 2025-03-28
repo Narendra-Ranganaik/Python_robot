@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-27T19:52:16.559299" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-03-27T20:35:47.050526" rpa="false" schemaversion="5">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Datadriven" source="/Users/devayanaimohanty/Desktop/Python_Project/Python_robot/TestCases/datadriven.robot">
 <kw name="open my browser" owner="loginFile" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-27T19:52:16.675996" level="INFO">Opening browser 'headlesschrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<msg time="2025-03-27T20:35:47.165767" level="INFO">Opening browser 'headlesschrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-27T19:52:16.675817" elapsed="9.748573"/>
+<status status="PASS" start="2025-03-27T20:35:47.165571" elapsed="2.174195"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-27T19:52:26.426110" elapsed="0.018540"/>
+<status status="PASS" start="2025-03-27T20:35:49.341118" elapsed="0.023402"/>
 </kw>
-<status status="PASS" start="2025-03-27T19:52:16.675363" elapsed="9.769441"/>
+<status status="PASS" start="2025-03-27T20:35:47.165059" elapsed="2.199617"/>
 </kw>
 <test id="s1-s1-t1" name="Test1" line="10">
 <kw name="invalid input tests">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-27T19:52:26.446438" elapsed="0.074040"/>
+<status status="PASS" start="2025-03-27T20:35:49.367489" elapsed="0.086763"/>
 </kw>
 <arg>admin@yourstore.com</arg>
 <arg>admin</arg>
-<status status="PASS" start="2025-03-27T19:52:26.446099" elapsed="0.074492"/>
+<status status="PASS" start="2025-03-27T20:35:49.366506" elapsed="0.087971"/>
 </kw>
-<status status="PASS" start="2025-03-27T19:52:26.445444" elapsed="0.075278"/>
+<status status="PASS" start="2025-03-27T20:35:49.364876" elapsed="0.089800"/>
 </test>
 <test id="s1-s1-t2" name="Test2" line="11">
 <kw name="invalid input tests">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-27T19:52:26.521433" elapsed="0.000125"/>
+<status status="PASS" start="2025-03-27T20:35:49.455418" elapsed="0.000110"/>
 </kw>
 <arg>adminn@yourstore.com</arg>
 <arg>admin</arg>
-<status status="PASS" start="2025-03-27T19:52:26.521185" elapsed="0.000431"/>
+<status status="PASS" start="2025-03-27T20:35:49.455182" elapsed="0.000395"/>
 </kw>
-<status status="PASS" start="2025-03-27T19:52:26.520931" elapsed="0.000768"/>
+<status status="PASS" start="2025-03-27T20:35:49.454954" elapsed="0.000693"/>
 </test>
 <kw name="close my browser" owner="loginFile" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-27T19:52:26.522214" elapsed="0.000104"/>
+<status status="PASS" start="2025-03-27T20:35:49.456091" elapsed="0.000094"/>
 </kw>
-<status status="PASS" start="2025-03-27T19:52:26.522079" elapsed="0.000291"/>
+<status status="PASS" start="2025-03-27T20:35:49.455973" elapsed="0.000255"/>
 </kw>
-<status status="PASS" start="2025-03-27T19:52:16.572147" elapsed="9.950255"/>
+<status status="PASS" start="2025-03-27T20:35:47.063129" elapsed="2.393126"/>
 </suite>
-<status status="PASS" start="2025-03-27T19:52:16.563463" elapsed="9.959376"/>
+<status status="PASS" start="2025-03-27T20:35:47.054743" elapsed="2.401877"/>
 </suite>
 <statistics>
 <total>
